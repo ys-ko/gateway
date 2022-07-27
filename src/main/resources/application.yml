@@ -44,15 +44,15 @@ spring:
     gateway:
       routes:
         - id: order
-          uri: http://user14-order:8080
+          uri: http://kys-order:8080
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://user14-delivery:8080
+          uri: http://kys-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: product
-          uri: http://user14-product:8080
+          uri: http://kys-product:8080
           predicates:
             - Path=/inventories/** 
         - id: frontend
